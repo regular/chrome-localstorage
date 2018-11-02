@@ -1,0 +1,32 @@
+{
+  "name": "chrome-localstorage",
+  "version": "1.0.0",
+  "description": "cli tool to directly write to/read from Chrome/Chromium's localStorage",
+  "bin": {
+    "localstorage": "bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chrome",
+    "chromium",
+    "localStorage"
+  ],
+  "author": "Jan Bölsche <jan@lagomorph.de> (https://regular.codes/)",
+  "license": "ISC",
+  "dependencies": {
+    "leveldown": "^4.0.1",
+    "levelup": "^3.1.1",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regular/chrome-localstorage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/regular/chrome-localstorage/issues"
+  },
+  "homepage": "https://github.com/regular/chrome-localstorage#readme"
+}
