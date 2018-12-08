@@ -1,5 +1,12 @@
 #!/usr/bin/env node
-//const location = 'data/regular/.config/chromium/Default/Local Storage/leveldb'
+const path = require('path')
+const os = require('os')
+
+const prefix = {
+  linux: '.config/chromium',
+  darwin: 'Library/Application Support/Chromium'
+}[os.platform()]
+
 const fs = require('fs')
 const levelup = require('levelup')
 const leveldown = require('leveldown')
@@ -7,7 +14,7 @@ const leveldown = require('leveldown')
 const argv = require('minimist')(process.argv.slice(2))
 console.dir(argv)
 
-const defaultDB = process.env.HOME + '/.config/chromium/Default/Local Storage/leveldb'
+const defaultDB = path.join(process.env.HOME, prefix,  'Default/Local Storage/leveldb')
 
 if (!['read', 'write'].includes(argv._[0] || argv._.length < 3)) {
   console.error(`
