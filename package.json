@@ -1,6 +1,6 @@
 {
   "name": "chrome-localstorage",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "cli tool to directly write to/read from Chrome/Chromium's localStorage",
   "bin": {
     "localstorage": "bin.js"
